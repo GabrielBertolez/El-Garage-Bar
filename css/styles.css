@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;700&display=swap");
+.body-bg {
+  background-color: #131313; }
+
+.navbar {
+  background-color: #131313;
+  border-bottom: 1px solid white; }
+
+#navbarNav ul li {
+  border-color: #fab335; }
+  #navbarNav ul li a {
+    color: white;
+    font-family: "Zilla Slab", serif;
+    font-weight: 700;
+    font-size: 1.6rem; }
+    #navbarNav ul li a:hover {
+      color: #ffc501;
+      font-size: 1.7rem; }
+  #navbarNav ul li .dropdown-menu {
+    background-color: #131313;
+    border: 1px solid white; }
+    #navbarNav ul li .dropdown-menu a {
+      font-family: "Zilla Slab", serif;
+      font-weight: 300;
+      font-size: 1.4rem; }
+      #navbarNav ul li .dropdown-menu a:hover {
+        color: #8a1909; }
+
+.banner img {
+  width: 100%; }
+
+.descripcion {
+  color: #ffc501;
+  font-family: "Zilla Slab", serif;
+  font-weight: 400;
+  font-size: 1.4rem; }
+
+.galeriaGarage img {
+  min-width: 30%; }
+
+.galeriaGalpon img {
+  min-width: 30%; }
+
+#Horarios {
+  color: #ffc501;
+  font-family: "Zilla Slab", serif;
+  font-weight: 400;
+  font-size: 1.4rem; }
+
+#contacto {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 30px;
+  color: #8a1909;
+  font-family: "Zilla Slab", serif;
+  font-weight: 700;
+  font-size: 1.6rem; }
+  #contacto label {
+    font-size: 1.4rem;
+    font-weight: 400; }
+  #contacto .form-control {
+    border: 2px solid #8a1909; }
+    #contacto .form-control select {
+      width: auto; }
+  #contacto .btn-primary {
+    border-color: transparent;
+    background-color: #131313;
+    border-radius: 5px;
+    font-size: 1.2rem; }
+    #contacto .btn-primary:hover {
+      color: #131313;
+      background-color: #ffc501; }
+  #contacto textarea {
+    resize: none; }
+
+.footer {
+  background-color: #131313;
+  border-top: 1px solid white;
+  color: white;
+  font-family: "Zilla Slab", serif;
+  font-weight: 300;
+  font-size: 1.2rem; }
+  .footer a {
+    text-decoration: none;
+    color: white; }
+    .footer a:hover {
+      color: yellow;
+      transform: translate(0, -5px); }
+    .footer a img {
+      width: 18%; }
+  .footer i {
+    color: #ffc501; }
+  .footer .proyecto {
+    color: #ffc501;
+    font-size: 0.8rem; }
+
+body {
+  background-color: #191919;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='100%25' height='100%25'%3E%3Cdefs%3E%3Cpattern id='p' width='250' height='30' patternUnits='userSpaceOnUse' patternTransform='scale(10)'%3E%3Cpath id='a' data-color='outline' fill='none' stroke='%23000000' stroke-width='5' d='M-62.5-15C-31.3-15 0-7.5 0-7.5S31.3 0 62.5 0 125-7.5 125-7.5s31.3-7.5 62.5-7.5S250-7.5 250-7.5 281.3 0 312.5 0'%3E%3C/path%3E%3Cuse xlink:href='%23a' y='15'%3E%3C/use%3E%3Cuse xlink:href='%23a' y='30'%3E%3C/use%3E%3Cuse xlink:href='%23a' y='45'%3E%3C/use%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23p)' width='100%25' height='100%25'%3E%3C/rect%3E%3C/svg%3E");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.container .card-deck .card {
+  background-color: transparent;
+  border: 0; }
+  .container .card-deck .card .card-body .card-title {
+    color: #131313;
+    font-family: "Zilla Slab", serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    background-color: white; }
+  .container .card-deck .card .card-body .card-text {
+    color: #131313;
+    font-family: "Zilla Slab", serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    background-color: #ffc501; }
+
+.titulos {
+  color: #8a1909;
+  font-family: "Zilla Slab", serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  background-color: white; }
+
+.bordeTitulos {
+  border: 8px solid white;
+  border-radius: 1.25rem; }

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Contacto
+	</title>
+</head>
+<body>
+	<h1>Completa el formulario para comunicarte con nosotros.</h1>
+	<div>
+		<form action="recibe.html" method="GET">
+			<input type="text" name="Nombre" placeholder="Ingresa tu nombre" >
+			<br>
+			<input type="email" name="email" placeholder="Ingresa tu email" >
+			<br>
+			<input type="number" name="telefono" placeholder="Ingresa tu telefono" >
+			<br>
+			<label>Ingresa tu mensaje:</label>
+			<br>
+			<textarea></textarea>
+			<br>
+
+			<label>Selecciona tu sexo: Hombre</label>
+			<input type="radio" name="sexo" value="Hombre">
+			<label>Mujer</label>
+			<input type="radio" name="sexo" value="Mujer">
+			<label>No especificar</label>
+			<input type="radio" name="sexo" value="No especificar">
+			<br>
+			
+			<label>¿Donde vivís?</label>
+			<select>
+			<option>Capital federal</option>
+			<option>Gran Buenos Aires</option>
+			<option>Provincia de Buenos Aires</option>
+			</select>
+			
+			<br>
+			<label>¿Que deseas recibir de nosotros?</label>
+			<label>Ofertas</label>
+			<input type="checkbox" name="ofertas" value="Si">
+			<label>Nuevos productos</label>
+			<input type="checkbox" name="nuevos_productos" value="Si">
+			<label>Sorteos</label>
+			<input type="checkbox" name="sorteos" value="Si">
+			<br>
+			
+			<input type="submit" name="sube_form" value="Enviar">
+			<input type="reset" name="limpiar" value="Limpiar"> 
+		</form>
+
+	</div>
+
+
+</body>
+</html>

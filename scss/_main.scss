@@ -1,0 +1,131 @@
+// Body
+.body-bg{
+	background-color: #131313;
+}
+// NavBar
+.navbar{
+	background-color: $colorNegro;
+	border-bottom: 1px solid $colorBlanco;
+}
+#navbarNav{
+	ul{
+		li{
+			border-color: #fab335;
+			a{
+				color: $colorBlanco;
+				font-family: $font;
+				font-weight: $weight-l;
+				font-size: $size-l;
+				&:hover{
+					color: $colorPrimario;
+					font-size: 1.7rem;
+				}
+			}
+			.dropdown-menu{
+				background-color: #131313;
+				border: 1px solid $colorBlanco;
+				a{
+					font-family: $font;
+					font-weight: $weight-s;
+					font-size: $size-m;
+					&:hover{
+						color: $colorSecundario;
+					}
+				}
+			}
+		}
+	}
+}
+.banner{
+	img{
+		width: 100%;
+	}
+}
+// Main
+.descripcion{
+	color: $colorPrimario;
+	font-family: $font;
+	font-weight: $weight-m;
+	font-size: $size-m;
+}
+// Galeria garage
+.galeriaGarage{
+	img{
+		min-width: 30%;
+	}
+}
+// Galeria galpon
+.galeriaGalpon{
+	img{
+		min-width: 30%;
+	}
+}
+// Horarios
+#Horarios{
+	color: $colorPrimario;
+	font-family: $font;
+	font-weight: $weight-m;
+	font-size: $size-m;
+}
+// Formulario
+#contacto{
+	width: 100%;
+	display: flex;
+  	flex-direction: row;
+  	justify-content: center;
+  	margin-top: 30px;
+  	color: $colorSecundario;
+	font-family: $font;
+	font-weight: $weight-l;
+	font-size: $size-l;
+  	label{
+  		font-size: $size-m;
+  		font-weight: $weight-m;
+  	}
+  	.form-control{
+  		border: 2px solid $colorSecundario;
+  		select{
+  			width: auto;
+  		}
+  	}
+	.btn-primary{
+		border-color: transparent;
+		background-color: #131313;
+		border-radius: 5px;
+		font-size: $size-s;
+		&:hover{
+			color: $colorNegro;
+			background-color: $colorPrimario;
+		}
+	}
+	textarea{
+		resize: none;
+	}
+}
+// Footer
+.footer{
+	background-color: #131313;
+	border-top: 1px solid $colorBlanco;
+	color: $colorBlanco;
+	font-family: $font;
+	font-weight: $weight-s;
+	font-size: $size-s;
+	a{
+		text-decoration: none;
+		color: $colorBlanco;
+		&:hover{
+			color: yellow;
+			transform: translate(0,-5px);
+		}
+		img{
+			width: 18%;
+		}
+	}
+	i{
+		color: $colorPrimario;
+	}
+	.proyecto{
+		color: $colorPrimario;
+		font-size: $size-xs;
+	}
+}
