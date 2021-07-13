@@ -6,6 +6,9 @@
   background-color: #131313;
   border-bottom: 1px solid white; }
 
+.navbar-toggler-icon {
+  background-color: grey; }
+
 #navbarNav ul li {
   border-color: #fab335; }
   #navbarNav ul li a {
@@ -15,7 +18,7 @@
     font-size: 1.6rem; }
     #navbarNav ul li a:hover {
       color: #ffc501;
-      font-size: 1.7rem; }
+      font-size: 1.63rem; }
   #navbarNav ul li .dropdown-menu {
     background-color: #131313;
     border: 1px solid white; }
@@ -29,23 +32,53 @@
 .banner img {
   width: 100%; }
 
+.banner h3 {
+  color: #ffc501;
+  font-family: "Zilla Slab", serif;
+  font-weight: 700;
+  font-size: 2.5rem; }
+
+.banner .carousel-item p {
+  color: white;
+  font-family: "Zilla Slab", serif;
+  font-weight: 400;
+  font-size: 1.6rem; }
+
 .descripcion {
   color: #ffc501;
   font-family: "Zilla Slab", serif;
   font-weight: 400;
   font-size: 1.4rem; }
+  .descripcion .btn-primary {
+    color: #131313;
+    background-color: white;
+    border-color: transparent; }
+    .descripcion .btn-primary:hover {
+      color: #131313;
+      background-color: #ffc501; }
 
 .galeriaGarage img {
   min-width: 30%; }
 
-.galeriaGalpon img {
-  min-width: 30%; }
-
-#Horarios {
+#horarios {
   color: #ffc501;
   font-family: "Zilla Slab", serif;
-  font-weight: 400;
-  font-size: 1.4rem; }
+  font-weight: 700;
+  font-size: 2.5rem; }
+
+.table td, .table th {
+  color: white;
+  padding: .75rem;
+  vertical-align: top;
+  border: 1px solid #464544;
+  font-size: 1.2rem;
+  font-family: 'Zilla Slab', serif; }
+
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #ffc501;
+  background-color: #131313; }
 
 #contacto {
   width: 100%;
@@ -65,13 +98,14 @@
     #contacto .form-control select {
       width: auto; }
   #contacto .btn-primary {
+    color: #131313;
     border-color: transparent;
-    background-color: #131313;
+    background-color: #ffc501;
     border-radius: 5px;
     font-size: 1.2rem; }
     #contacto .btn-primary:hover {
-      color: #131313;
-      background-color: #ffc501; }
+      color: white;
+      transition: 0.3s; }
   #contacto textarea {
     resize: none; }
 
@@ -84,17 +118,22 @@
   font-size: 1.2rem; }
   .footer a {
     text-decoration: none;
-    color: white; }
+    color: white;
+    font-weight: 400;
+    font-size: 1.2rem; }
     .footer a:hover {
-      color: yellow;
+      color: #8a1909;
       transform: translate(0, -5px); }
     .footer a img {
       width: 18%; }
   .footer i {
     color: #ffc501; }
-  .footer .proyecto {
+  .footer .proyecto p {
     color: #ffc501;
     font-size: 0.8rem; }
+  .footer p {
+    font-weight: 400;
+    font-size: 1.2rem; }
 
 body {
   background-color: #191919;

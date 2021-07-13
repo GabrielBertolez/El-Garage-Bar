@@ -6,6 +6,18 @@
 .navbar{
 	background-color: $colorNegro;
 	border-bottom: 1px solid $colorBlanco;
+    // -webkit-transition: all 0.6s ease-out;
+    // -moz-transition: all 0.6s ease-out;
+    // -o-transition: all 0.6s ease-out;
+    // -ms-transition: all 0.6s ease-out;
+    // transition: all 0.6s ease-out;	
+}
+//.navbar.scrolled {
+//    background: rgb(68, 68, 68); /* IE */
+//    background: rgba(0, 0, 0, 0.78); /* NON-IE */
+//}
+.navbar-toggler-icon{
+	background-color: grey;
 }
 #navbarNav{
 	ul{
@@ -18,7 +30,11 @@
 				font-size: $size-l;
 				&:hover{
 					color: $colorPrimario;
-					font-size: 1.7rem;
+					font-size: 1.63rem;
+					// content: '';
+    				//display: block;
+    				//border-bottom: 1px solid $colorPrimario;
+   					//transition: .2s ease-in-out;
 				}
 			}
 			.dropdown-menu{
@@ -40,6 +56,18 @@
 	img{
 		width: 100%;
 	}
+	h3 {
+		color: $colorPrimario;
+		font-family: $font;
+		font-weight: $weight-l;
+		font-size: $size-xl;
+	}
+	.carousel-item p{
+		color: $colorBlanco;
+		font-family: $font;
+		font-weight: $weight-m;
+		font-size: $size-l;
+	}
 }
 // Main
 .descripcion{
@@ -47,6 +75,15 @@
 	font-family: $font;
 	font-weight: $weight-m;
 	font-size: $size-m;
+	.btn-primary {
+	    color: $colorNegro;
+	    background-color: $colorBlanco;
+	    border-color: transparent;
+	    &:hover{
+	    	color: $colorNegro;
+	    	background-color: $colorPrimario;
+	    }
+    }
 }
 // Galeria garage
 .galeriaGarage{
@@ -55,18 +92,34 @@
 	}
 }
 // Galeria galpon
-.galeriaGalpon{
-	img{
-		min-width: 30%;
-	}
-}
+// .galeriaGalpon{
+// 	img{
+// 		min-width: 30%;
+// 	}
+// }
+
 // Horarios
-#Horarios{
+#horarios{
 	color: $colorPrimario;
 	font-family: $font;
-	font-weight: $weight-m;
-	font-size: $size-m;
+	font-weight: $weight-l;
+	font-size: $size-xl;
 }
+.table td, .table th {
+	color: $colorBlanco;
+    padding: .75rem;
+    vertical-align: top;
+    border: 1px solid #464544;
+    font-size: 1.2rem;
+    font-family: 'Zilla Slab', serif;
+}
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #ffc501;
+    background-color: #131313;
+}
+
 // Formulario
 #contacto{
 	width: 100%;
@@ -89,13 +142,14 @@
   		}
   	}
 	.btn-primary{
+		color: $colorNegro;
 		border-color: transparent;
-		background-color: #131313;
+		background-color: $colorPrimario;
 		border-radius: 5px;
 		font-size: $size-s;
 		&:hover{
-			color: $colorNegro;
-			background-color: $colorPrimario;
+			color: $colorBlanco;
+			transition: 0.3s;
 		}
 	}
 	textarea{
@@ -113,8 +167,10 @@
 	a{
 		text-decoration: none;
 		color: $colorBlanco;
+		font-weight: $weight-m;
+		font-size: $size-s;
 		&:hover{
-			color: yellow;
+			color: $colorSecundario;
 			transform: translate(0,-5px);
 		}
 		img{
@@ -125,7 +181,13 @@
 		color: $colorPrimario;
 	}
 	.proyecto{
-		color: $colorPrimario;
-		font-size: $size-xs;
+		p{
+			color: $colorPrimario;
+			font-size: $size-xs;
+		}
+	}
+	p{
+		font-weight: $weight-m;
+		font-size: $size-s;	
 	}
 }
