@@ -40,3 +40,12 @@ body{
 	border: 8px solid $colorBlanco;
 	border-radius: 1.25rem;
 }
+
+// HMTL Bebidas
+#bebidas .card-title{
+	color: $colorNegro;
+	font-family: $font;
+	font-weight: $weight-l;
+	font-size: $size-l;
+	background-color: $colorPrimario;
+}

@@ -42,12 +42,17 @@
 				border: 1px solid $colorBlanco;
 				a{
 					font-family: $font;
-					font-weight: $weight-s;
+					font-weight: $weight-m;
 					font-size: $size-m;
 					&:hover{
 						color: $colorSecundario;
 					}
 				}
+				.dropdown-item:focus, .dropdown-item:hover {
+				    color: #16181b;
+				    text-decoration: none;
+				    background-color: $colorPrimario;
+				}				
 			}
 		}
 	}
@@ -171,7 +176,11 @@
 		font-size: $size-s;
 		&:hover{
 			color: $colorSecundario;
-			transform: translate(0,-5px);
+			transition: color .3s ease;
+    		transition-property: color;
+    		transition-duration: 0.3s;
+    		transition-timing-function: ease;
+    		transition-delay: 0s;
 		}
 		img{
 			width: 18%;

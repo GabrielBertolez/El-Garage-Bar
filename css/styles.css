@@ -24,10 +24,14 @@
     border: 1px solid white; }
     #navbarNav ul li .dropdown-menu a {
       font-family: "Zilla Slab", serif;
-      font-weight: 300;
+      font-weight: 400;
       font-size: 1.4rem; }
       #navbarNav ul li .dropdown-menu a:hover {
         color: #8a1909; }
+    #navbarNav ul li .dropdown-menu .dropdown-item:focus, #navbarNav ul li .dropdown-menu .dropdown-item:hover {
+      color: #16181b;
+      text-decoration: none;
+      background-color: #ffc501; }
 
 .banner img {
   width: 100%; }
@@ -123,7 +127,11 @@
     font-size: 1.2rem; }
     .footer a:hover {
       color: #8a1909;
-      transform: translate(0, -5px); }
+      transition: color .3s ease;
+      transition-property: color;
+      transition-duration: 0.3s;
+      transition-timing-function: ease;
+      transition-delay: 0s; }
     .footer a img {
       width: 18%; }
   .footer i {
@@ -168,3 +176,10 @@ body {
 .bordeTitulos {
   border: 8px solid white;
   border-radius: 1.25rem; }
+
+#bebidas .card-title {
+  color: #131313;
+  font-family: "Zilla Slab", serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  background-color: #ffc501; }
