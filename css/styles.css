@@ -5,6 +5,9 @@
 .navbar {
   background-color: #131313;
   border-bottom: 1px solid white; }
+  .navbar img:hover {
+    transition: transform 125ms;
+    transform: translateY(2px); }
 
 .navbar-toggler-icon {
   background-color: grey; }
@@ -113,33 +116,69 @@
   #contacto textarea {
     resize: none; }
 
-.footer {
+#footer {
   background-color: #131313;
   border-top: 1px solid white;
   color: white;
   font-family: "Zilla Slab", serif;
   font-weight: 300;
   font-size: 1.2rem; }
-  .footer a {
+  #footer a {
     text-decoration: none;
     color: white;
     font-weight: 400;
     font-size: 1.2rem; }
-    .footer a:hover {
+    #footer a:hover {
       color: #8a1909;
       transition: color .3s ease;
       transition-property: color;
       transition-duration: 0.3s;
       transition-timing-function: ease;
       transition-delay: 0s; }
-    .footer a img {
+    #footer a img {
       width: 18%; }
-  .footer i {
+    #footer a .fa-instagram {
+      color: white; }
+      #footer a .fa-instagram:hover {
+        color: #E1306C;
+        transition: color .3s ease;
+        transition-property: color;
+        transition-duration: 0.3s;
+        transition-timing-function: ease;
+        transition-delay: 0s; }
+    #footer a .fa-facebook-f {
+      color: white; }
+      #footer a .fa-facebook-f:hover {
+        color: #4267B2;
+        transition: color .3s ease;
+        transition-property: color;
+        transition-duration: 0.3s;
+        transition-timing-function: ease;
+        transition-delay: 0s; }
+    #footer a .fa-whatsapp {
+      color: white; }
+      #footer a .fa-whatsapp:hover {
+        color: #25d366;
+        transition: color .3s ease;
+        transition-property: color;
+        transition-duration: 0.3s;
+        transition-timing-function: ease;
+        transition-delay: 0s; }
+    #footer a .fa-envelope {
+      color: white; }
+      #footer a .fa-envelope:hover {
+        color: #0072C6;
+        transition: color .3s ease;
+        transition-property: color;
+        transition-duration: 0.3s;
+        transition-timing-function: ease;
+        transition-delay: 0s; }
+  #footer i {
     color: #ffc501; }
-  .footer .proyecto p {
+  #footer .proyecto p {
     color: #ffc501;
     font-size: 0.8rem; }
-  .footer p {
+  #footer p {
     font-weight: 400;
     font-size: 1.2rem; }
 
