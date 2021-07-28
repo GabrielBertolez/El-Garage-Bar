@@ -10,19 +10,24 @@
 		<link rel="icon" href="media/images/garageicon.png">
 	</head>
 	<body class="body-bg">
+		<div class="boton-subir">
+			<a href="#"><i class="fas fa-arrow-circle-up wow animate__animated animate__fadeInDown"></i></a>
+		</div>
 		<!-- HEADER NAV -->
 		<nav class="navbar navbar-expand-lg navbar-light sticky-top pb-3 scrolled">
-			<a href="index.html"><img src="media/images/elgaragelogo1.png" alt="logo"></a>
+			<a href="index.html">
+				<img src="media/images/elgaragelogo1.png" alt="logo">
+			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 			</button>
-			<div class="collapse navbar-collapse" id="navbarNav">
+			<div id="navbarNav" class="collapse navbar-collapse">
 				<ul class="navbar-nav ml-auto wow animate__animated animate__fadeInUp">
 					<li class="nav-item">
 						<a class="nav-link linkboton" href="#">Inicio</a>
 					</li>
 					<li class="nav-item dropdown">
-						<a class="nav-link linkboton" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menú</a>
+						<a id="navbarDropdown" class="nav-link linkboton" href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menú</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 							<a class="dropdown-item" href="pages/menuVegan.html">Vegan</a>
 							<a class="dropdown-item" href="pages/menuNoVegan.html">No vegan</a>
@@ -37,7 +42,7 @@
 			</div>
 		</nav>		
 		<!-- BANNER CAROUSEL -->
-		<div id="carouselExampleCaptions" class="carousel slide banner" data-ride="carousel">
+		<div id="carousel" class="carousel slide banner" data-ride="carousel">
 			<div class="carousel-inner">
 				<div class="carousel-item active">
 					<img src="media/images/bannerGarage1.jpg" alt="banner">
@@ -64,8 +69,11 @@
 			</a>
 		</div>
 		<!-- MAIN -->
+		<div class="container-fluid nombre pt-5 pb-5 text-center">
+			<p>En <strong>EL GARAGE BAR</strong> vas a encontrar opciones para todos los gustos:</p>
+		</div>
 		<div class="container descripcion pt-5 pb-5">
-			<p>En <strong>El Garage</strong> vas a encontrar opciones para todos los gustos, podes disfrutar de una cerveza tirada con amigos o venir en familia, ¡contamos con juegos para los mas chicos y los no tan chicos!</p>
+			<p>Podes disfrutar de una cerveza tirada con amigos o venir en familia, ¡contamos con juegos para los mas chicos y los no tan chicos!</p>
 			<p>Veni a conocernos y disfruta de la comodidad de estacionar tu auto en nuestro garage, ¡sin perder tiempo buscando donde dejarlo!</p>
 		</div>
 		<div class="d-flex flex-nowrap justify-content-center galeriaGarage">
@@ -79,11 +87,6 @@
 			<p>¡Queremos facilitarte la vida! Te invitamos a sumar a tu negocio o casa productos de calidad que encontrarás en nuestra tienda online, no sólo queremos ser tu distribuidora amiga sino que podemos asesorarte y guiarte en tus compras.</p>
 			<p><a class="btn btn-primary btn-lg" target="_blank" href="media/docs/elgalponprecios.pdf" download>Descarga el listado de productos</a></p>	
 		</div>
-		<!--<div class="d-flex flex-nowrap justify-content-center galeriaGalpon">
-			<img src="media/images/galponvegano1.jpg" alt="galpon" class="">
-			<img src="media/images/galponvegano2.jpg" alt="galpon" class="">
-			<img src="media/images/galponvegano3.jpg" alt="galpon" class="">
-		</div> -->
 		<!-- HORARIO -->
 		<div id="horarios" class="container text-center pb-3 wow animate__animated animate__slideInDown">NUESTROS HORARIOS</div>
 		<table class="container table text-center pt-5 pb-5 table-striped table-dark">
@@ -151,7 +154,8 @@
 		<!-- FOOTER -->
 		<div id="footer" class="d-flex flex-row justify-content-between align-items-center mt-5 pt-3">
 			<div class="col-4">
-				<i class="fas fa-map-marker-alt pr-2 pb-2"></i><a href="https://www.google.com/maps/place/El+garage+bar/@-34.7511349,-58.3948358,15z/data=!4m5!3m4!1s0x0:0x347119a120c23818!8m2!3d-34.75113!4d-58.3948738" target="_blank">Avenida Alsina 1253, Banfield.</a>
+				<i class="fas fa-map-marker-alt pr-2 pb-2"></i>
+				<a href="https://www.google.com/maps/place/El+garage+bar/@-34.7511349,-58.3948358,15z/data=!4m5!3m4!1s0x0:0x347119a120c23818!8m2!3d-34.75113!4d-58.3948738" target="_blank">Avenida Alsina 1253, Banfield.</a>
 				<p><i class="fas fa-mobile-alt pr-2"></i>Whatsapp: 11-41652956</p>
 			</div>
 			<div class="col-4 proyecto align-self-end">
@@ -175,26 +179,9 @@
 		</div>
 		<!-- SCRIPTS -->
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-		<!--CAMBIO DE COLOR NAVBAR
-		<script>
-		function checkScroll(){
-		    var startY = $('.navbar').height() * 2; //The point where the navbar changes in px
-
-		    if($(window).scrollTop() > startY){
-		        $('.navbar').addClass("scrolled");
-		    }else{
-		        $('.navbar').removeClass("scrolled");
-		    }
-		}
-
-		if($('.navbar').length > 0){
-		    $(window).on("scroll load resize", function(){
-		        checkScroll();
-		    });
-		}
-		</script> -->		
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 		<script src="https://kit.fontawesome.com/708a294a91.js" crossorigin="anonymous"></script>
+		<script src="js/subirarriba.js"></script>
 		<script src="js/wow.js"></script>
 		<script>
 		new WOW().init();

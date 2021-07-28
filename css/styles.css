@@ -51,8 +51,19 @@
   font-weight: 400;
   font-size: 1.6rem; }
 
-.descripcion {
+.nombre {
   color: #ffc501;
+  font-family: "Zilla Slab", serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  background-color: #131313;
+  border-bottom: 2px solid #ffc501;
+  border-top: 2px solid #ffc501; }
+  .nombre strong {
+    font-weight: 700; }
+
+.descripcion {
+  color: white;
   font-family: "Zilla Slab", serif;
   font-weight: 400;
   font-size: 1.4rem; }
@@ -66,6 +77,18 @@
 
 .galeriaGarage img {
   min-width: 30%; }
+
+.boton-subir {
+  position: fixed;
+  right: 5%;
+  bottom: 10px;
+  padding: 20px;
+  display: none;
+  opacity: 0.7;
+  z-index: 5; }
+  .boton-subir a {
+    font-size: 2.5rem;
+    color: #ffc501; }
 
 #horarios {
   color: #ffc501;
