@@ -4,7 +4,7 @@
 
 .navbar {
   background-color: #131313;
-  border-bottom: 1px solid white; }
+  border-bottom: 2px solid white; }
   .navbar img:hover {
     transition: transform 125ms;
     transform: translateY(2px); }
@@ -20,17 +20,16 @@
     font-weight: 700;
     font-size: 1.6rem; }
     #navbarNav ul li a:hover {
-      color: #ffc501;
-      font-size: 1.63rem; }
+      color: #ffc501; }
   #navbarNav ul li .dropdown-menu {
     background-color: #131313;
-    border: 1px solid white; }
+    border: 2px solid white; }
     #navbarNav ul li .dropdown-menu a {
       font-family: "Zilla Slab", serif;
       font-weight: 400;
       font-size: 1.4rem; }
       #navbarNav ul li .dropdown-menu a:hover {
-        color: #8a1909; }
+        color: #c10000; }
     #navbarNav ul li .dropdown-menu .dropdown-item:focus, #navbarNav ul li .dropdown-menu .dropdown-item:hover {
       color: #16181b;
       text-decoration: none;
@@ -40,7 +39,7 @@
   width: 100%; }
 
 .banner h3 {
-  color: #ffc501;
+  color: white;
   font-family: "Zilla Slab", serif;
   font-weight: 700;
   font-size: 2.5rem; }
@@ -50,16 +49,27 @@
   font-family: "Zilla Slab", serif;
   font-weight: 400;
   font-size: 1.6rem; }
+  .banner .carousel-item p i {
+    color: #1e7e34; }
 
-.nombre {
+.tituloPrincipal {
   color: #ffc501;
   font-family: "Zilla Slab", serif;
   font-weight: 400;
   font-size: 2.5rem;
   background-color: #131313;
-  border-bottom: 2px solid #ffc501;
-  border-top: 2px solid #ffc501; }
-  .nombre strong {
+  border-bottom: 1px solid #ffc501;
+  border-top: 1px solid #ffc501; }
+  .tituloPrincipal strong {
+    font-weight: 700; }
+
+.opciones {
+  color: white;
+  font-family: "Zilla Slab", serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  background-color: #131313; }
+  .opciones strong {
     font-weight: 700; }
 
 .descripcion {
@@ -67,6 +77,10 @@
   font-family: "Zilla Slab", serif;
   font-weight: 400;
   font-size: 1.4rem; }
+  .descripcion strong {
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #ffc501; }
   .descripcion .btn-primary {
     color: #131313;
     background-color: white;
@@ -90,7 +104,7 @@
     font-size: 2.5rem;
     color: #ffc501; }
 
-#horarios {
+#horarios p {
   color: #ffc501;
   font-family: "Zilla Slab", serif;
   font-weight: 700;
@@ -110,21 +124,30 @@
   color: #ffc501;
   background-color: #131313; }
 
+.ancla:before {
+  display: block;
+  content: " ";
+  margin-top: -100px;
+  height: 100px;
+  visibility: hidden; }
+
 #contacto {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-top: 30px;
-  color: #8a1909;
+  color: #c10000;
   font-family: "Zilla Slab", serif;
   font-weight: 700;
   font-size: 1.6rem; }
   #contacto label {
     font-size: 1.4rem;
     font-weight: 400; }
+    #contacto label i {
+      font-size: 1.2rem; }
   #contacto .form-control {
-    border: 2px solid #8a1909; }
+    border: 2px solid #c10000; }
     #contacto .form-control select {
       width: auto; }
   #contacto .btn-primary {
@@ -139,9 +162,13 @@
   #contacto textarea {
     resize: none; }
 
+.preFooter {
+  background-color: #131313;
+  border-top: 2px solid #ffc501; }
+
 #footer {
   background-color: #131313;
-  border-top: 1px solid white;
+  border-top: 2px solid white;
   color: white;
   font-family: "Zilla Slab", serif;
   font-weight: 300;
@@ -152,7 +179,7 @@
     font-weight: 400;
     font-size: 1.2rem; }
     #footer a:hover {
-      color: #8a1909;
+      color: #c10000;
       transition: color .3s ease;
       transition-property: color;
       transition-duration: 0.3s;
@@ -229,7 +256,7 @@ body {
     background-color: #ffc501; }
 
 .titulos {
-  color: #8a1909;
+  color: #c10000;
   font-family: "Zilla Slab", serif;
   font-weight: 700;
   font-size: 2.5rem;

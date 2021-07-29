@@ -5,23 +5,14 @@
 // NavBar
 .navbar{
 	background-color: $colorNegro;
-	border-bottom: 1px solid $colorBlanco;
-    // -webkit-transition: all 0.6s ease-out;
-    // -moz-transition: all 0.6s ease-out;
-    // -o-transition: all 0.6s ease-out;
-    // -ms-transition: all 0.6s ease-out;
-    // transition: all 0.6s ease-out;
-    img{
-    	&:hover{
-    		transition: transform 125ms;
-    		transform: translateY(2px);
-    	}
-    }
+	border-bottom: 2px solid $colorBlanco;
+  img{
+  	&:hover{
+  		transition: transform 125ms;
+  		transform: translateY(2px);
+  	}
+  }
 }
-//.navbar.scrolled {
-//    background: rgb(68, 68, 68); /* IE */
-//    background: rgba(0, 0, 0, 0.78); /* NON-IE */
-//}
 .navbar-toggler-icon{
 	background-color: grey;
 }
@@ -36,16 +27,11 @@
 				font-size: $size-l;
 				&:hover{
 					color: $colorPrimario;
-					font-size: 1.63rem;
-					// content: '';
-    				//display: block;
-    				//border-bottom: 1px solid $colorPrimario;
-   					//transition: .2s ease-in-out;
 				}
 			}
 			.dropdown-menu{
 				background-color: #131313;
-				border: 1px solid $colorBlanco;
+				border: 2px solid $colorBlanco;
 				a{
 					font-family: $font;
 					font-weight: $weight-m;
@@ -68,7 +54,7 @@
 		width: 100%;
 	}
 	h3 {
-		color: $colorPrimario;
+		color: $colorBlanco;
 		font-family: $font;
 		font-weight: $weight-l;
 		font-size: $size-xl;
@@ -78,28 +64,46 @@
 		font-family: $font;
 		font-weight: $weight-m;
 		font-size: $size-l;
+		i{
+			color: #1e7e34;
+		}
 	}
 }
 // Main
-.nombre{
+.tituloPrincipal{
 	color: $colorPrimario;
 	font-family: $font;
 	font-weight: $weight-m;
 	font-size: $size-xl;
 	background-color: $colorNegro;
-	border-bottom: 2px solid $colorPrimario;
-	border-top: 2px solid $colorPrimario;
+	border-bottom: 1px solid $colorPrimario;
+	border-top: 1px solid $colorPrimario;
 	strong{
 		font-weight: $weight-l;
 	}
 }
 
+.opciones{
+	color: $colorBlanco;
+	font-family: $font;
+	font-weight: $weight-l;
+	font-size: $size-s;
+	background-color: $colorNegro;
+	strong{
+		font-weight: $weight-l;
+	}
+}
 
 .descripcion{
 	color: $colorBlanco;
 	font-family: $font;
 	font-weight: $weight-m;
 	font-size: $size-m;
+	strong{
+		font-weight: $weight-l;
+		font-size: $size-l;
+		color: $colorPrimario;
+	}
 	.btn-primary {
 	    color: $colorNegro;
 	    background-color: $colorBlanco;
@@ -140,10 +144,12 @@
 
 // Horarios
 #horarios{
-	color: $colorPrimario;
-	font-family: $font;
-	font-weight: $weight-l;
-	font-size: $size-xl;
+	p{
+		color: $colorPrimario;
+		font-family: $font;
+		font-weight: $weight-l;
+		font-size: $size-xl;
+	}
 }
 .table td, .table th {
 	color: $colorBlanco;
@@ -160,20 +166,33 @@
     background-color: #131313;
 }
 
+// Salto a formulario,
+// el header es sticky y ocupa px,
+// entonces el salto queda mal ubicado
+.ancla:before {       
+  display: block;
+  content: " ";
+  margin-top: -100px;  
+  height: 100px;
+  visibility: hidden;
+}
 // Formulario
 #contacto{
-	width: 100%;
-	display: flex;
-  	flex-direction: row;
-  	justify-content: center;
-  	margin-top: 30px;
-  	color: $colorSecundario;
-	font-family: $font;
-	font-weight: $weight-l;
-	font-size: $size-l;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin-top: 30px;
+		color: $colorSecundario;
+		font-family: $font;
+		font-weight: $weight-l;
+		font-size: $size-l;
   	label{
   		font-size: $size-m;
   		font-weight: $weight-m;
+  		i{
+  			font-size: $size-s;
+  		}
   	}
   	.form-control{
   		border: 2px solid $colorSecundario;
@@ -196,10 +215,18 @@
 		resize: none;
 	}
 }
+
+//Pre-footer
+.preFooter{
+	background-color: $colorNegro;
+	border-top: 2px solid $colorPrimario;
+}
+
+
 // Footer
 #footer{
 	background-color: #131313;
-	border-top: 1px solid $colorBlanco;
+	border-top: 2px solid $colorBlanco;
 	color: $colorBlanco;
 	font-family: $font;
 	font-weight: $weight-s;
