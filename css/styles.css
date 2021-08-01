@@ -89,9 +89,6 @@
       color: #131313;
       background-color: #ffc501; }
 
-.galeriaGarage img {
-  min-width: 30%; }
-
 .boton-subir {
   position: fixed;
   right: 5%;
@@ -161,6 +158,10 @@
       transition: 0.3s; }
   #contacto textarea {
     resize: none; }
+  #contacto .modal-header {
+    border-bottom: none; }
+  #contacto .modal-footer {
+    border-top: none; }
 
 .preFooter {
   background-color: #131313;

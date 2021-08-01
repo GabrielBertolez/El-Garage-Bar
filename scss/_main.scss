@@ -41,9 +41,9 @@
 					}
 				}
 				.dropdown-item:focus, .dropdown-item:hover {
-				    color: #16181b;
-				    text-decoration: none;
-				    background-color: $colorPrimario;
+					color: #16181b;
+				  text-decoration: none;
+				  background-color: $colorPrimario;
 				}				
 			}
 		}
@@ -105,27 +105,15 @@
 		color: $colorPrimario;
 	}
 	.btn-primary {
+		color: $colorNegro;
+	  background-color: $colorBlanco;
+	  border-color: transparent;
+	  &:hover{
 	    color: $colorNegro;
-	    background-color: $colorBlanco;
-	    border-color: transparent;
-	    &:hover{
-	    	color: $colorNegro;
-	    	background-color: $colorPrimario;
-	    }
-    }
+	    background-color: $colorPrimario;
+	  }
+  }
 }
-// Galeria garage
-.galeriaGarage{
-	img{
-		min-width: 30%;
-	}
-}
-// Galeria galpon
-// .galeriaGalpon{
-// 	img{
-// 		min-width: 30%;
-// 	}
-// }
 
 // Boton volver arriba
 .boton-subir {
@@ -153,17 +141,17 @@
 }
 .table td, .table th {
 	color: $colorBlanco;
-    padding: .75rem;
-    vertical-align: top;
-    border: 1px solid #464544;
-    font-size: 1.2rem;
-    font-family: 'Zilla Slab', serif;
+	padding: .75rem;
+  vertical-align: top;
+  border: 1px solid #464544;
+  font-size: 1.2rem;
+  font-family: 'Zilla Slab', serif;
 }
 .table {
-    width: 100%;
-    margin-bottom: 1rem;
-    color: #ffc501;
-    background-color: #131313;
+	width: 100%;
+  margin-bottom: 1rem;
+  color: #ffc501;
+  background-color: #131313;
 }
 
 // Salto a formulario,
@@ -178,28 +166,28 @@
 }
 // Formulario
 #contacto{
-		width: 100%;
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		margin-top: 30px;
-		color: $colorSecundario;
-		font-family: $font;
-		font-weight: $weight-l;
-		font-size: $size-l;
-  	label{
-  		font-size: $size-m;
-  		font-weight: $weight-m;
-  		i{
-  			font-size: $size-s;
-  		}
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 30px;
+	color: $colorSecundario;
+	font-family: $font;
+	font-weight: $weight-l;
+	font-size: $size-l;
+	label{
+		font-size: $size-m;
+  	font-weight: $weight-m;
+  	i{
+  		font-size: $size-s;
   	}
-  	.form-control{
-  		border: 2px solid $colorSecundario;
-  		select{
-  			width: auto;
-  		}
+  }
+  .form-control{
+  	border: 2px solid $colorSecundario;
+  	select{
+  		width: auto;
   	}
+  }
 	.btn-primary{
 		color: $colorNegro;
 		border-color: transparent;
@@ -213,6 +201,12 @@
 	}
 	textarea{
 		resize: none;
+	}
+	.modal-header{
+		border-bottom: none;
+	}
+	.modal-footer{
+		border-top: none;
 	}
 }
 
@@ -239,10 +233,10 @@
 		&:hover{
 			color: $colorSecundario;
 			transition: color .3s ease;
-    		transition-property: color;
-    		transition-duration: 0.3s;
-    		transition-timing-function: ease;
-    		transition-delay: 0s;
+    	transition-property: color;
+    	transition-duration: 0.3s;
+    	transition-timing-function: ease;
+    	transition-delay: 0s;
 		}
 		img{
 			width: 18%;
@@ -252,44 +246,44 @@
 			&:hover{
 				color: #E1306C;
 				transition: color .3s ease;
-	    		transition-property: color;
-	    		transition-duration: 0.3s;
-	    		transition-timing-function: ease;
-	    		transition-delay: 0s;
-		    }
-		}
+	    	transition-property: color;
+	    	transition-duration: 0.3s;
+	    	transition-timing-function: ease;
+	    	transition-delay: 0s;
+	    }
+	  }
 		.fa-facebook-f{
 			color: $colorBlanco;
 			&:hover{
 				color: #4267B2;
 				transition: color .3s ease;
-	    		transition-property: color;
-	    		transition-duration: 0.3s;
-	    		transition-timing-function: ease;
-	    		transition-delay: 0s;
-		    }
+	    	transition-property: color;
+	    	transition-duration: 0.3s;
+	    	transition-timing-function: ease;
+	    	transition-delay: 0s;
+	    }
 		}
 		.fa-whatsapp{
 			color: $colorBlanco;
 			&:hover{
 				color: #25d366;
 				transition: color .3s ease;
-	    		transition-property: color;
-	    		transition-duration: 0.3s;
-	    		transition-timing-function: ease;
-	    		transition-delay: 0s;
-		    }	
+	    	transition-property: color;
+	    	transition-duration: 0.3s;
+	    	transition-timing-function: ease;
+	    	transition-delay: 0s;
+	    }	
 		}
 		.fa-envelope{
 			color: $colorBlanco;
 			&:hover{
 				color: #0072C6;
 				transition: color .3s ease;
-	    		transition-property: color;
-	    		transition-duration: 0.3s;
-	    		transition-timing-function: ease;
-	    		transition-delay: 0s;
-		    }	
+	    	transition-property: color;
+	    	transition-duration: 0.3s;
+	    	transition-timing-function: ease;
+	    	transition-delay: 0s;
+	    }	
 		}
 	}
 	i{
