@@ -2,6 +2,9 @@
 .body-bg{
 	background-color: #131313;
 }
+.h1, .h2, .h3,{
+	line-height: 1.428;
+}
 // NavBar
 .navbar{
 	background-color: $colorNegro;
@@ -14,9 +17,17 @@
   }
 }
 .navbar-toggler-icon{
-	background-color: grey;
+	background-color: $colorBlanco;
+	border: 2px solid grey;
 }
-#navbarNav{
+#navbarNav{;
+	@media (max-width: $smartphone) {
+		text-align: center;
+	}
+	@media (min-width: $tablet) {
+		text-align: left;
+		padding-left: 1em;
+	}
 	ul{
 		li{
 			border-color: #fab335;
@@ -56,28 +67,58 @@
 	h3 {
 		color: $colorBlanco;
 		font-family: $font;
-		font-weight: $weight-l;
-		font-size: $size-xl;
+		@media (max-width: $smartphone) {
+			font-weight: $weight-l;
+			font-size: $size-xs;
+		}
+		@media (min-width: $tablet) {
+			font-weight: $weight-l;
+			font-size: $size-s;
+		}
+		@media (min-width: $desktop) {
+			font-weight: $weight-l;
+			font-size: $size-xl;
+		}
 	}
 	.carousel-item p{
 		color: $colorBlanco;
 		font-family: $font;
-		font-weight: $weight-m;
-		font-size: $size-l;
+		@media (max-width: $smartphone) {
+			font-weight: $weight-m;
+			font-size: $size-xs;
+		}
+		@media (min-width: $tablet) {
+			font-weight: $weight-m;
+			font-size: $size-xs;
+		}
+		@media (min-width: $desktop) {
+			font-weight: $weight-m;
+			font-size: $size-l;
+		}
 		i{
 			color: #1e7e34;
 		}
 	}
 }
 // Main
-.tituloPrincipal{
+h1.tituloPrincipal{
 	color: $colorPrimario;
 	font-family: $font;
-	font-weight: $weight-m;
-	font-size: $size-xl;
 	background-color: $colorNegro;
 	border-bottom: 1px solid $colorPrimario;
 	border-top: 1px solid $colorPrimario;
+	@media (max-width: $smartphone) {
+		font-weight: $weight-m;
+		font-size: $size-m;
+	}
+	@media (min-width: $tablet) {
+		font-weight: $weight-m;
+		font-size: $size-l;
+	}
+	@media (min-width: $desktop) {
+		font-weight: $weight-m;
+		font-size: $size-xl;
+	}
 	strong{
 		font-weight: $weight-l;
 	}
@@ -89,6 +130,18 @@
 	font-weight: $weight-l;
 	font-size: $size-s;
 	background-color: $colorNegro;
+	@media (max-width: $smartphone) {
+		font-weight: $weight-l;
+		font-size: $size-xs;
+	}
+	@media (min-width: $tablet) {
+		font-weight: $weight-l;
+		font-size: $size-xs;
+	}
+	@media (min-width: $desktop) {
+		font-weight: $weight-l;
+		font-size: $size-s;
+	}
 	strong{
 		font-weight: $weight-l;
 	}
@@ -97,17 +150,52 @@
 .descripcion{
 	color: $colorBlanco;
 	font-family: $font;
-	font-weight: $weight-m;
-	font-size: $size-m;
+	@media (max-width: $smartphone) {
+		font-weight: $weight-m;
+		font-size: $size-xs;
+	}
+	@media (min-width: $tablet) {
+		font-weight: $weight-m;
+		font-size: $size-s;
+	}
+	@media (min-width: $desktop) {
+		font-weight: $weight-m;
+		font-size: $size-m;
+	}
 	strong{
 		font-weight: $weight-l;
 		font-size: $size-l;
 		color: $colorPrimario;
+		@media (max-width: $smartphone) {
+			font-weight: $weight-l;
+			font-size: $size-s;
+		}
+		@media (min-width: $tablet) {
+			font-weight: $weight-l;
+			font-size: $size-m;
+		}
+		@media (min-width: $desktop) {
+			font-weight: $weight-l;
+			font-size: $size-l;
+		}
 	}
 	.btn-primary {
 		color: $colorNegro;
 	  background-color: $colorBlanco;
 	  border-color: transparent;
+		@media (max-width: $smartphone) {
+			font-weight: $weight-l;
+			font-size: $size-xs;
+			padding: 4px 8px;
+		}
+		@media (min-width: $tablet) {
+			font-weight: $weight-l;
+			font-size: $size-s;
+		}
+		@media (min-width: $desktop) {
+			font-weight: $weight-l;
+			font-size: $size-m;
+		}
 	  &:hover{
 	    color: $colorNegro;
 	    background-color: $colorPrimario;
@@ -118,15 +206,23 @@
 // Boton volver arriba
 .boton-subir {
   position: fixed;
-  right: 5%;
+  right: 0%;
   bottom: 10px;
   padding: 20px;
   display: none;
   opacity: 0.7;
   z-index: 5;
   a{
-  	font-size: $size-xl;
   	color: $colorPrimario;
+ 		@media (max-width: $smartphone) {
+			font-size: $size-l;
+		}
+		@media (min-width: $tablet) {
+			font-size: $size-xl;
+		}
+		@media (min-width: $desktop) {
+			font-size: $size-xl;
+		}
   }
 }
 
@@ -137,21 +233,66 @@
 		font-family: $font;
 		font-weight: $weight-l;
 		font-size: $size-xl;
+		@media (max-width: $smartphone) {
+			font-weight: $weight-l;
+			font-size: $size-s;
+		}
+		@media (min-width: $tablet) {
+			font-weight: $weight-l;
+			font-size: $size-l;
+		}
+		@media (min-width: $desktop) {
+			font-weight: $weight-l;
+			font-size: $size-xl;
+		}		
 	}
 }
-.table td, .table th {
-	color: $colorBlanco;
-	padding: .75rem;
-  vertical-align: top;
-  border: 1px solid #464544;
-  font-size: 1.2rem;
-  font-family: 'Zilla Slab', serif;
-}
+// .table td, .table th {
+// 	color: $colorBlanco;
+// 	padding: .75rem;
+//   vertical-align: top;
+//   border: 1px solid #464544;
+//   font-family: 'Zilla Slab', serif;
+// 	@media (max-width: $smartphone) {
+// 		font-size: $size-xs;
+// 	}
+// 	@media (min-width: $tablet) {
+// 		font-size: $size-s;
+// 	}
+// 	@media (min-width: $desktop) {
+// 		font-size: 1.2rem;
+// 	}  
+// }
 .table {
 	width: 100%;
   margin-bottom: 1rem;
   color: #ffc501;
   background-color: #131313;
+  color: $colorBlanco;
+	padding: .75rem;
+  vertical-align: top;
+  border: 1px solid #464544;
+  font-family: 'Zilla Slab', serif;
+  tbody{
+  	tr{
+  		th,td{
+	  		color: $colorBlanco;
+				padding: .75rem;
+			  vertical-align: top;
+			  border: 1px solid #464544;
+			  font-family: 'Zilla Slab', serif;
+				@media (max-width: $smartphone) {
+					font-size: $size-xs;
+				}
+				@media (min-width: $tablet) {
+					font-size: $size-s;
+				}
+				@media (min-width: $desktop) {
+					font-size: 1.2rem;
+				}
+			}
+		}
+  }
 }
 
 // Salto a formulario,
@@ -173,11 +314,33 @@
 	margin-top: 30px;
 	color: $colorSecundario;
 	font-family: $font;
-	font-weight: $weight-l;
-	font-size: $size-l;
+	@media (max-width: $smartphone) {
+		font-weight: $weight-l;
+		font-size: $size-s;
+	}
+	@media (min-width: $tablet) {
+		font-weight: $weight-l;
+		font-size: $size-s;
+	}
+	@media (min-width: $desktop) {
+		font-weight: $weight-l;
+		font-size: $size-l;
+	}
 	label{
 		font-size: $size-m;
   	font-weight: $weight-m;
+		@media (max-width: $smartphone) {
+			font-weight: $weight-l;
+			font-size: $size-xs;
+		}
+		@media (min-width: $tablet) {
+			font-weight: $weight-m;
+			font-size: $size-s;
+		}
+		@media (min-width: $desktop) {
+			font-weight: $weight-m;
+			font-size: $size-m;
+		}
   	i{
   		font-size: $size-s;
   	}
@@ -194,6 +357,15 @@
 		background-color: $colorPrimario;
 		border-radius: 5px;
 		font-size: $size-s;
+		@media (max-width: $smartphone) {
+			font-size: $size-xs;
+		}
+		@media (min-width: $tablet) {
+			font-size: $size-s;
+		}
+		@media (min-width: $desktop) {
+			font-size: $size-s;
+		}	
 		&:hover{
 			color: $colorBlanco;
 			transition: 0.3s;
@@ -214,6 +386,17 @@
 .preFooter{
 	background-color: $colorNegro;
 	border-top: 2px solid $colorPrimario;
+	img{
+		@media (max-width: $smartphone) {
+			width: 30%;
+		}
+		@media (min-width: $tablet) {
+			width: auto;
+		}
+		@media (min-width: $desktop) {
+			width: auto;
+		}		
+	}
 }
 
 
@@ -225,11 +408,27 @@
 	font-family: $font;
 	font-weight: $weight-s;
 	font-size: $size-s;
+	h2{
+		line-height: 1.428;
+	}
 	a{
 		text-decoration: none;
 		color: $colorBlanco;
 		font-weight: $weight-m;
 		font-size: $size-s;
+		@media (max-width: $smartphone) {
+			font-weight: $weight-m;
+			font-size: $size-xs;
+			text-align: center;
+		}
+		@media (min-width: $tablet) {
+			font-weight: $weight-m;
+			font-size: $size-s;
+		}
+		@media (min-width: $desktop) {
+			font-weight: $weight-m;
+			font-size: $size-s;
+		}
 		&:hover{
 			color: $colorSecundario;
 			transition: color .3s ease;
@@ -297,6 +496,19 @@
 	}
 	p{
 		font-weight: $weight-m;
-		font-size: $size-s;	
+		font-size: $size-s;
+		margin-bottom: 0;
+		@media (max-width: $smartphone) {
+			font-weight: $weight-m;
+			font-size: $size-xs;
+		}
+		@media (min-width: $tablet) {
+			font-weight: $weight-m;
+			font-size: $size-s;
+		}
+		@media (min-width: $desktop) {
+			font-weight: $weight-m;
+			font-size: $size-s;
+		}
 	}
 }

@@ -2,6 +2,9 @@
 .body-bg {
   background-color: #131313; }
 
+.h1, .h2, .h3 {
+  line-height: 1.428; }
+
 .navbar {
   background-color: #131313;
   border-bottom: 2px solid white; }
@@ -10,7 +13,17 @@
     transform: translateY(2px); }
 
 .navbar-toggler-icon {
-  background-color: grey; }
+  background-color: white;
+  border: 2px solid grey; }
+
+@media (max-width: 576px) {
+  #navbarNav {
+    text-align: center; } }
+
+@media (min-width: 768px) {
+  #navbarNav {
+    text-align: left;
+    padding-left: 1em; } }
 
 #navbarNav ul li {
   border-color: #fab335; }
@@ -40,27 +53,57 @@
 
 .banner h3 {
   color: white;
-  font-family: "Zilla Slab", serif;
-  font-weight: 700;
-  font-size: 2.5rem; }
+  font-family: "Zilla Slab", serif; }
+  @media (max-width: 576px) {
+    .banner h3 {
+      font-weight: 700;
+      font-size: 0.8rem; } }
+  @media (min-width: 768px) {
+    .banner h3 {
+      font-weight: 700;
+      font-size: 1.2rem; } }
+  @media (min-width: 1200px) {
+    .banner h3 {
+      font-weight: 700;
+      font-size: 2.5rem; } }
 
 .banner .carousel-item p {
   color: white;
-  font-family: "Zilla Slab", serif;
-  font-weight: 400;
-  font-size: 1.6rem; }
+  font-family: "Zilla Slab", serif; }
+  @media (max-width: 576px) {
+    .banner .carousel-item p {
+      font-weight: 400;
+      font-size: 0.8rem; } }
+  @media (min-width: 768px) {
+    .banner .carousel-item p {
+      font-weight: 400;
+      font-size: 0.8rem; } }
+  @media (min-width: 1200px) {
+    .banner .carousel-item p {
+      font-weight: 400;
+      font-size: 1.6rem; } }
   .banner .carousel-item p i {
     color: #1e7e34; }
 
-.tituloPrincipal {
+h1.tituloPrincipal {
   color: #ffc501;
   font-family: "Zilla Slab", serif;
-  font-weight: 400;
-  font-size: 2.5rem;
   background-color: #131313;
   border-bottom: 1px solid #ffc501;
   border-top: 1px solid #ffc501; }
-  .tituloPrincipal strong {
+  @media (max-width: 576px) {
+    h1.tituloPrincipal {
+      font-weight: 400;
+      font-size: 1.4rem; } }
+  @media (min-width: 768px) {
+    h1.tituloPrincipal {
+      font-weight: 400;
+      font-size: 1.6rem; } }
+  @media (min-width: 1200px) {
+    h1.tituloPrincipal {
+      font-weight: 400;
+      font-size: 2.5rem; } }
+  h1.tituloPrincipal strong {
     font-weight: 700; }
 
 .opciones {
@@ -69,57 +112,136 @@
   font-weight: 700;
   font-size: 1.2rem;
   background-color: #131313; }
+  @media (max-width: 576px) {
+    .opciones {
+      font-weight: 700;
+      font-size: 0.8rem; } }
+  @media (min-width: 768px) {
+    .opciones {
+      font-weight: 700;
+      font-size: 0.8rem; } }
+  @media (min-width: 1200px) {
+    .opciones {
+      font-weight: 700;
+      font-size: 1.2rem; } }
   .opciones strong {
     font-weight: 700; }
 
 .descripcion {
   color: white;
-  font-family: "Zilla Slab", serif;
-  font-weight: 400;
-  font-size: 1.4rem; }
+  font-family: "Zilla Slab", serif; }
+  @media (max-width: 576px) {
+    .descripcion {
+      font-weight: 400;
+      font-size: 0.8rem; } }
+  @media (min-width: 768px) {
+    .descripcion {
+      font-weight: 400;
+      font-size: 1.2rem; } }
+  @media (min-width: 1200px) {
+    .descripcion {
+      font-weight: 400;
+      font-size: 1.4rem; } }
   .descripcion strong {
     font-weight: 700;
     font-size: 1.6rem;
     color: #ffc501; }
+    @media (max-width: 576px) {
+      .descripcion strong {
+        font-weight: 700;
+        font-size: 1.2rem; } }
+    @media (min-width: 768px) {
+      .descripcion strong {
+        font-weight: 700;
+        font-size: 1.4rem; } }
+    @media (min-width: 1200px) {
+      .descripcion strong {
+        font-weight: 700;
+        font-size: 1.6rem; } }
   .descripcion .btn-primary {
     color: #131313;
     background-color: white;
     border-color: transparent; }
+    @media (max-width: 576px) {
+      .descripcion .btn-primary {
+        font-weight: 700;
+        font-size: 0.8rem;
+        padding: 4px 8px; } }
+    @media (min-width: 768px) {
+      .descripcion .btn-primary {
+        font-weight: 700;
+        font-size: 1.2rem; } }
+    @media (min-width: 1200px) {
+      .descripcion .btn-primary {
+        font-weight: 700;
+        font-size: 1.4rem; } }
     .descripcion .btn-primary:hover {
       color: #131313;
       background-color: #ffc501; }
 
 .boton-subir {
   position: fixed;
-  right: 5%;
+  right: 0%;
   bottom: 10px;
   padding: 20px;
   display: none;
   opacity: 0.7;
   z-index: 5; }
   .boton-subir a {
-    font-size: 2.5rem;
     color: #ffc501; }
+    @media (max-width: 576px) {
+      .boton-subir a {
+        font-size: 1.6rem; } }
+    @media (min-width: 768px) {
+      .boton-subir a {
+        font-size: 2.5rem; } }
+    @media (min-width: 1200px) {
+      .boton-subir a {
+        font-size: 2.5rem; } }
 
 #horarios p {
   color: #ffc501;
   font-family: "Zilla Slab", serif;
   font-weight: 700;
   font-size: 2.5rem; }
-
-.table td, .table th {
-  color: white;
-  padding: .75rem;
-  vertical-align: top;
-  border: 1px solid #464544;
-  font-size: 1.2rem;
-  font-family: 'Zilla Slab', serif; }
+  @media (max-width: 576px) {
+    #horarios p {
+      font-weight: 700;
+      font-size: 1.2rem; } }
+  @media (min-width: 768px) {
+    #horarios p {
+      font-weight: 700;
+      font-size: 1.6rem; } }
+  @media (min-width: 1200px) {
+    #horarios p {
+      font-weight: 700;
+      font-size: 2.5rem; } }
 
 .table {
   width: 100%;
   margin-bottom: 1rem;
   color: #ffc501;
-  background-color: #131313; }
+  background-color: #131313;
+  color: white;
+  padding: .75rem;
+  vertical-align: top;
+  border: 1px solid #464544;
+  font-family: 'Zilla Slab', serif; }
+  .table tbody tr th, .table tbody tr td {
+    color: white;
+    padding: .75rem;
+    vertical-align: top;
+    border: 1px solid #464544;
+    font-family: 'Zilla Slab', serif; }
+    @media (max-width: 576px) {
+      .table tbody tr th, .table tbody tr td {
+        font-size: 0.8rem; } }
+    @media (min-width: 768px) {
+      .table tbody tr th, .table tbody tr td {
+        font-size: 1.2rem; } }
+    @media (min-width: 1200px) {
+      .table tbody tr th, .table tbody tr td {
+        font-size: 1.2rem; } }
 
 .ancla:before {
   display: block;
@@ -135,12 +257,34 @@
   justify-content: center;
   margin-top: 30px;
   color: #c10000;
-  font-family: "Zilla Slab", serif;
-  font-weight: 700;
-  font-size: 1.6rem; }
+  font-family: "Zilla Slab", serif; }
+  @media (max-width: 576px) {
+    #contacto {
+      font-weight: 700;
+      font-size: 1.2rem; } }
+  @media (min-width: 768px) {
+    #contacto {
+      font-weight: 700;
+      font-size: 1.2rem; } }
+  @media (min-width: 1200px) {
+    #contacto {
+      font-weight: 700;
+      font-size: 1.6rem; } }
   #contacto label {
     font-size: 1.4rem;
     font-weight: 400; }
+    @media (max-width: 576px) {
+      #contacto label {
+        font-weight: 700;
+        font-size: 0.8rem; } }
+    @media (min-width: 768px) {
+      #contacto label {
+        font-weight: 400;
+        font-size: 1.2rem; } }
+    @media (min-width: 1200px) {
+      #contacto label {
+        font-weight: 400;
+        font-size: 1.4rem; } }
     #contacto label i {
       font-size: 1.2rem; }
   #contacto .form-control {
@@ -153,6 +297,15 @@
     background-color: #ffc501;
     border-radius: 5px;
     font-size: 1.2rem; }
+    @media (max-width: 576px) {
+      #contacto .btn-primary {
+        font-size: 0.8rem; } }
+    @media (min-width: 768px) {
+      #contacto .btn-primary {
+        font-size: 1.2rem; } }
+    @media (min-width: 1200px) {
+      #contacto .btn-primary {
+        font-size: 1.2rem; } }
     #contacto .btn-primary:hover {
       color: white;
       transition: 0.3s; }
@@ -166,6 +319,15 @@
 .preFooter {
   background-color: #131313;
   border-top: 2px solid #ffc501; }
+  @media (max-width: 576px) {
+    .preFooter img {
+      width: 30%; } }
+  @media (min-width: 768px) {
+    .preFooter img {
+      width: auto; } }
+  @media (min-width: 1200px) {
+    .preFooter img {
+      width: auto; } }
 
 #footer {
   background-color: #131313;
@@ -174,11 +336,26 @@
   font-family: "Zilla Slab", serif;
   font-weight: 300;
   font-size: 1.2rem; }
+  #footer h2 {
+    line-height: 1.428; }
   #footer a {
     text-decoration: none;
     color: white;
     font-weight: 400;
     font-size: 1.2rem; }
+    @media (max-width: 576px) {
+      #footer a {
+        font-weight: 400;
+        font-size: 0.8rem;
+        text-align: center; } }
+    @media (min-width: 768px) {
+      #footer a {
+        font-weight: 400;
+        font-size: 1.2rem; } }
+    @media (min-width: 1200px) {
+      #footer a {
+        font-weight: 400;
+        font-size: 1.2rem; } }
     #footer a:hover {
       color: #c10000;
       transition: color .3s ease;
@@ -231,7 +408,20 @@
     font-size: 0.8rem; }
   #footer p {
     font-weight: 400;
-    font-size: 1.2rem; }
+    font-size: 1.2rem;
+    margin-bottom: 0; }
+    @media (max-width: 576px) {
+      #footer p {
+        font-weight: 400;
+        font-size: 0.8rem; } }
+    @media (min-width: 768px) {
+      #footer p {
+        font-weight: 400;
+        font-size: 1.2rem; } }
+    @media (min-width: 1200px) {
+      #footer p {
+        font-weight: 400;
+        font-size: 1.2rem; } }
 
 body {
   background-color: #191919;
