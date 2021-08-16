@@ -30,7 +30,7 @@ body{
 	border-bottom: 2px solid $colorBlanco;
   img{
 		@media (max-width: $smartphone) {
-			width: 80%;
+			width: 100%;
 		}
 		@media (min-width: $tablet) {
 			width: 50%;

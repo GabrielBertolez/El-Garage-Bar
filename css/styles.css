@@ -27,7 +27,7 @@
   border-bottom: 2px solid white; }
   @media (max-width: 576px) {
     .navbar img {
-      width: 80%; } }
+      width: 100%; } }
   @media (min-width: 768px) {
     .navbar img {
       width: 50%; } }
