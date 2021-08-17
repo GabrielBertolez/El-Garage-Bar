@@ -23,7 +23,7 @@
     background-repeat: no-repeat; } }
 
 .navbar {
-  background-color: #131313;
+  background-color: #000000;
   border-bottom: 2px solid white; }
   @media (max-width: 576px) {
     .navbar img {
@@ -61,7 +61,7 @@
     #navbarNav ul li a:hover {
       color: #ffc501; }
   #navbarNav ul li .dropdown-menu {
-    background-color: #131313;
+    background-color: #000000;
     border: 2px solid white; }
     #navbarNav ul li .dropdown-menu a {
       font-family: "Zilla Slab", serif;
@@ -83,7 +83,7 @@
   @media (max-width: 576px) {
     .banner h3 {
       font-weight: 700;
-      font-size: 0.9rem; } }
+      font-size: 1rem; } }
   @media (min-width: 768px) {
     .banner h3 {
       font-weight: 700;
@@ -99,11 +99,11 @@
   @media (max-width: 576px) {
     .banner .carousel-item p {
       font-weight: 400;
-      font-size: 0.9rem; } }
+      font-size: 1rem; } }
   @media (min-width: 768px) {
     .banner .carousel-item p {
       font-weight: 400;
-      font-size: 0.9rem; } }
+      font-size: 1rem; } }
   @media (min-width: 1200px) {
     .banner .carousel-item p {
       font-weight: 400;
@@ -126,7 +126,7 @@
 h1.tituloPrincipal {
   color: #ffc501;
   font-family: "Zilla Slab", serif;
-  background-color: #131313;
+  background-color: #000000;
   border-bottom: 1px solid #ffc501;
   border-top: 1px solid #ffc501; }
   @media (max-width: 576px) {
@@ -149,7 +149,7 @@ h1.tituloPrincipal {
   font-family: "Zilla Slab", serif;
   font-weight: 700;
   font-size: 1.2rem;
-  background-color: #131313; }
+  background-color: #000000; }
   @media (max-width: 576px) {
     .opciones {
       font-weight: 700;
@@ -157,7 +157,7 @@ h1.tituloPrincipal {
   @media (min-width: 768px) {
     .opciones {
       font-weight: 700;
-      font-size: 0.9rem; } }
+      font-size: 1rem; } }
   @media (min-width: 1200px) {
     .opciones {
       font-weight: 700;
@@ -171,7 +171,7 @@ h1.tituloPrincipal {
   @media (max-width: 576px) {
     .descripcion {
       font-weight: 400;
-      font-size: 0.9rem; } }
+      font-size: 1rem; } }
   @media (min-width: 768px) {
     .descripcion {
       font-weight: 400;
@@ -197,13 +197,13 @@ h1.tituloPrincipal {
         font-weight: 700;
         font-size: 1.6rem; } }
   .descripcion .btn-primary {
-    color: #131313;
+    color: #000000;
     background-color: white;
     border-color: transparent; }
     @media (max-width: 576px) {
       .descripcion .btn-primary {
         font-weight: 700;
-        font-size: 0.9rem;
+        font-size: 1rem;
         padding: 4px 8px; } }
     @media (min-width: 768px) {
       .descripcion .btn-primary {
@@ -214,7 +214,7 @@ h1.tituloPrincipal {
         font-weight: 700;
         font-size: 1.4rem; } }
     .descripcion .btn-primary:hover {
-      color: #131313;
+      color: #000000;
       background-color: #ffc501; }
 
 .boton-subir {
@@ -273,7 +273,7 @@ h1.tituloPrincipal {
     font-family: 'Zilla Slab', serif; }
     @media (max-width: 576px) {
       .table tbody tr th, .table tbody tr td {
-        font-size: 0.9rem; } }
+        font-size: 1rem; } }
     @media (min-width: 768px) {
       .table tbody tr th, .table tbody tr td {
         font-size: 1.2rem; } }
@@ -314,7 +314,7 @@ h1.tituloPrincipal {
     @media (max-width: 576px) {
       #contacto label {
         font-weight: 700;
-        font-size: 0.9rem; } }
+        font-size: 1rem; } }
     @media (min-width: 768px) {
       #contacto label {
         font-weight: 400;
@@ -330,14 +330,14 @@ h1.tituloPrincipal {
     #contacto .form-control select {
       width: auto; }
   #contacto .btn-primary {
-    color: #131313;
+    color: #000000;
     border-color: transparent;
     background-color: #ffc501;
     border-radius: 5px;
     font-size: 1.2rem; }
     @media (max-width: 576px) {
       #contacto .btn-primary {
-        font-size: 0.9rem; } }
+        font-size: 1rem; } }
     @media (min-width: 768px) {
       #contacto .btn-primary {
         font-size: 1.2rem; } }
@@ -355,7 +355,7 @@ h1.tituloPrincipal {
     border-top: none; }
 
 .preFooter {
-  background-color: #131313;
+  background-color: #000000;
   border-top: 2px solid #ffc501; }
   @media (max-width: 576px) {
     .preFooter img {
@@ -368,7 +368,7 @@ h1.tituloPrincipal {
       width: auto; } }
 
 #footer {
-  background-color: #131313;
+  background-color: #000000;
   border-top: 2px solid white;
   color: white;
   font-family: "Zilla Slab", serif;
@@ -384,7 +384,7 @@ h1.tituloPrincipal {
     @media (max-width: 576px) {
       #footer a {
         font-weight: 400;
-        font-size: 0.9rem;
+        font-size: 1rem;
         text-align: center; } }
     @media (min-width: 768px) {
       #footer a {
@@ -451,7 +451,7 @@ h1.tituloPrincipal {
     @media (max-width: 576px) {
       #footer p {
         font-weight: 400;
-        font-size: 0.9rem; } }
+        font-size: 1rem; } }
     @media (min-width: 768px) {
       #footer p {
         font-weight: 400;
@@ -465,13 +465,13 @@ h1.tituloPrincipal {
   background-color: transparent;
   border: 0; }
   .container .card-deck .card .card-body .card-title {
-    color: #131313;
+    color: #000000;
     font-family: "Zilla Slab", serif;
     font-weight: 700;
     font-size: 1.6rem;
     background-color: white; }
   .container .card-deck .card .card-body .card-text {
-    color: #131313;
+    color: #000000;
     font-family: "Zilla Slab", serif;
     font-weight: 400;
     font-size: 1.2rem;
@@ -489,7 +489,7 @@ h1.tituloPrincipal {
   border-radius: 1.25rem; }
 
 #bebidas .card-title {
-  color: #131313;
+  color: #000000;
   font-family: "Zilla Slab", serif;
   font-weight: 700;
   font-size: 1.6rem;
